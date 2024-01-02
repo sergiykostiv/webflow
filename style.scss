@@ -1356,11 +1356,17 @@ body {
         height: 48px;
         border-radius: 6px;
         border: none;
+        font-size: 16px;
         padding: 9px 16px;
         outline: rgb(243, 209, 191) solid 1px;
 
         &::placeholder {
             color: $text-dark-gray;
+            font-family: 'Epilogue', sans-serif;    
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
         }
 
         &:focus {
@@ -1369,8 +1375,15 @@ body {
     }
 
     &__modal-message {
-        min-height: 96px;
+        height: 96px;
         margin-bottom: 32px;
+        resize: none;
+        font-family: 'Epilogue', sans-serif;    
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 200% */
+        overflow: hidden;
     }
 
     &__modal-button {
