@@ -1,0 +1,90 @@
+.up-title {
+    color: $acent-orange;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.page-title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px; /* 114.286% */
+    letter-spacing: -1px;
+    color: $text-dark;
+}
+
+.page-title-white {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px; /* 114.286% */
+    letter-spacing: -1px;
+    color: $white;
+}
+
+.second-title {
+    color: $text-dark;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px; /* 120% */
+}
+
+.text-big {
+    font-size: 20px;
+    color: $text-dark;
+}
+
+.text {
+    color: $text-dark-gray;
+}
+
+.button-baige {
+    color: $text-dark;
+    padding: 18px 33px;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: $white;
+    border-radius: 6px;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $acent-orange;
+        color: $white;
+    }
+}
+
+.button-orange {
+    color: $white;
+    text-align: center;
+    padding: 18px 33px;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: $acent-orange;
+    border-radius: 6px;
+    transition: all .3s;
+}
+
+.button-transperent {
+    border: 1px solid $lighten-gray;
+    border-radius: 6px;
+    padding: 18px 35px;
+    font-weight: 900;
+    transition: all .3s;
+    line-height: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $acent-purple;
+        border-color: $acent-purple;
+    }
+}
+
+.link-more {
+    color: $text-dark;
+}
+
+.block-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: $text-dark;
+}
