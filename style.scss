@@ -32,11 +32,6 @@ body {
         display: flex;
     }
 
-    &__button {
-        /// подумать как вернуть норм размер кнопки 
-    }
-
-
     &__burger {
         &-box {
             display: none;
@@ -756,6 +751,11 @@ body {
         color: rgba(255, 255, 255, 0.64);
         margin-bottom: 26px;
     }
+
+    &__item-link {
+        color: $white;
+
+    }
 }
 
 .ourteam {
@@ -1289,6 +1289,7 @@ body {
 
         &::placeholder {
             color: $text-dark-gray;
+            font-size: 16px;
         }
 
         &:focus {
@@ -1390,6 +1391,7 @@ body {
         background-color: $acent-orange;
         color: $white;
         border: none;
+        cursor: pointer;
     }
 }
 
@@ -1445,6 +1447,13 @@ body {
     &__main-text {
         margin-bottom: 34px;
         color: $light-gray;
+    }
+
+    &__main-btn {
+        &:hover {
+            background-color: $acent-purple;
+            // color:
+        }
     }
 }
 
