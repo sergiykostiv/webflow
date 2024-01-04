@@ -342,7 +342,7 @@ body {
         &::before {
             content: "";
             position: absolute;
-            background-image: url(https://sergiykostiv.github.io/webflow/static/img/check.svg);
+            background-image: url(../static/img/check.svg);
             width: 32px;
             height: 32px;
             top: 0;
@@ -449,7 +449,7 @@ body {
             position: absolute;
             width: 64px;
             height: 64px;
-            background-image: url(static/img/review-img-second.svg);
+            background-image: url(../static/img/review-img-second.svg);
             top: 0;
             left: 0;
             margin: auto 0;
@@ -586,21 +586,21 @@ body {
 
     &__gallery-item {
         &--tm1 {
-            background-image: url(static/img/sofa.png);
+            background-image: url(../static/img/sofa.png);
         }
 
         &--tm2 {
-            background-image: url(static/img/keyboard.png);
+            background-image: url(../static/img/keyboard.png);
             width: 670px;
         }
 
         &--tm3 {
-            background-image: url(static/img/work-media.png);
+            background-image: url(../static/img/work-media.png);
             width: 670px;
         }
 
         &--tm4 {
-            background-image: url(static/img/dddone.png);
+            background-image: url(../static/img/dddone.png);
         }
     }
 
@@ -735,7 +735,7 @@ body {
             position: absolute;
             width: 16px;
             height: 16px;
-            background-image: url(static/img/time__icon.svg);
+            background-image: url(../static/img/time__icon.svg);
         }
     }
 
@@ -805,7 +805,7 @@ body {
         cursor: pointer;
         width: 48px;
         height: 48px;
-        background-image: url(static/img/arrow-right.svg);
+        background-image: url(../static/img/arrow-right.svg);
         border-radius: 100%;
         transition: box-shadow .3s;
     
@@ -819,7 +819,7 @@ body {
     }
 
     &__prev {
-        background-image: url(static/img/arrow-left.svg);
+        background-image: url(../static/img/arrow-left.svg);
     }
 }
 
@@ -880,7 +880,7 @@ body {
             position: absolute;
             width: 100px;
             height: 80px;
-            background-image: url(static/img/founder-decor.svg);
+            background-image: url(../static/img/founder-decor.svg);
             z-index: -1;
         }
     }
@@ -1046,13 +1046,13 @@ body {
             left: 0px;
             width: 16px;
             height: 16px;
-            background-image: url(static/img/list_price-minus.svg)
+            background-image: url(../static/img/list_price-minus.svg)
         }
     }
 
     &__item-list--active-dot {
         &::after {
-            background-image: url(static/img/list_price-plus.svg)
+            background-image: url(../static/img/list_price-plus.svg)
         }
     }
 }
@@ -1327,7 +1327,7 @@ body {
         position: absolute;
         height: 72px;
         width: 72px;
-        background-image: url(static/img/pin__map.svg);
+        background-image: url(../static/img/pin__map.svg);
         top: 50%;
         transform:translate(0, -50%);
         right: 25%;
