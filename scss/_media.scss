@@ -187,6 +187,10 @@
     }
 
     .testimonials {
+        &__main {
+            flex-wrap: wrap;
+        }
+
         &__main-review {
             width: 100%;
             min-height: 416px;
@@ -612,6 +616,7 @@
         &__main-review {
             width: 100%;
             min-height: 416px;
+            padding: 48px 28px;
         }
 
         &__up-title {

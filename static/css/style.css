@@ -876,17 +876,19 @@ body {
 }
 .testimonials__main {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
   margin-bottom: 65px;
+  justify-content: space-between;
+}
+.testimonials__main-colum {
+  width: 100%;
 }
 .testimonials__main-review {
   height: auto;
-  width: 50%;
   padding: 48px;
   border: 1px solid #F3D1BF;
 }
-.testimonials__main-review:first-child {
+.testimonials__main-review--accent {
   background-color: #fff;
 }
 .testimonials__main-rating {
@@ -908,6 +910,7 @@ body {
 .testimonials__main-author--company-name {
   color: #391400;
 }
+
 .pricing {
   background-color: #FDF0E9;
   padding-bottom: 156px;
@@ -1482,6 +1485,9 @@ body {
     flex-direction: column;
     row-gap: 41px;
   }
+  .testimonials__main {
+    flex-wrap: wrap;
+  }
   .testimonials__main-review {
     width: 100%;
     min-height: 416px;
@@ -1788,6 +1794,7 @@ body {
   .testimonials__main-review {
     width: 100%;
     min-height: 416px;
+    padding: 48px 28px;
   }
   .testimonials__up-title {
     margin-bottom: 17px;
