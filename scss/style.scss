@@ -122,15 +122,6 @@ body {
         letter-spacing: -2px;
         max-width: 90%;
         margin-bottom: 24px;
-
-        transition: all .8s;
-        transform: translate(0, 50%);
-        opacity: 0;
-
-        &.active {
-            transform: translate(0, 0);
-            opacity: 1;
-        }
     }
 
     &__sub-title {

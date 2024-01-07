@@ -223,13 +223,6 @@ body {
   letter-spacing: -2px;
   max-width: 90%;
   margin-bottom: 24px;
-  transition: all 0.8s;
-  transform: translate(0, 50%);
-  opacity: 0;
-}
-.banner__title.active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 .banner__sub-title {
   color: rgba(255, 255, 255, 0.64);
