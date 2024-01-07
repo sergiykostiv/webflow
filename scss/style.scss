@@ -122,6 +122,15 @@ body {
         letter-spacing: -2px;
         max-width: 90%;
         margin-bottom: 24px;
+
+        transition: all .8s;
+        transform: translate(0, 50%);
+        opacity: 0;
+
+        &.active {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
     }
 
     &__sub-title {
@@ -387,7 +396,7 @@ body {
     &__blocks-item {
         padding: 48px;
         max-width: 336px;
-        border: solid 1px #F3D1BF;
+        border: solid 1px $bg-baige-border;
     }
 
     &__blocks-item--first {
@@ -663,7 +672,6 @@ body {
 }
 
 .events {
-    
     background: $main-color;
     color: $white;
 
@@ -693,11 +701,14 @@ body {
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         text-align: start;
         padding: 36px 40px;
         border-radius: 6px;
-        border: 1px solid #3A3C56;
-        max-width: 370px;
+        border: 1px solid $bg-dark-border;
+        width: 370px;
     }
 
     &__item-date {
@@ -741,20 +752,20 @@ body {
 
     &__item-title {
         padding-top: 40px;
-        border-top: solid 1px #3A3C56;
+        border-top: solid 1px $bg-dark-border;
         font-size: 24px;
         font-weight: 700;
         margin-bottom: 19px;
     }
 
     &__item-text {
-        color: rgba(255, 255, 255, 0.64);
+        color: $light-gray;
         margin-bottom: 26px;
     }
 
     &__item-link {
         color: $white;
-
+        justify-self: flex-end;
     }
 }
 
@@ -785,7 +796,7 @@ body {
         align-items: flex-end;
         height: 272px;
         border-radius: 6px;
-        border: 1px solid #3A3C56;
+        border: 1px solid $bg-dark-border;
         margin-bottom: 26px;
     }
 
@@ -838,7 +849,7 @@ body {
     width: 12px;
     height: 12px;
     background: transparent;
-    border: solid 1px #4E4F6E;
+    border: solid 1px $bg-dark-border;
     transition: background-color .3s;
     opacity: 1;
 
@@ -935,7 +946,7 @@ body {
     }
 
     &__main-review--accent {
-        background-color: #fff;
+        background-color: $white;
     }
 
     &__main-rating {
@@ -1316,7 +1327,7 @@ body {
         z-index: 3;
     }
 
-    &__wrapper-item {
+    &__wrapper-item-wrapper {
         position: relative;
     }
 
@@ -1356,7 +1367,7 @@ body {
         border: none;
         font-size: 16px;
         padding: 9px 16px;
-        outline: rgb(243, 209, 191) solid 1px;
+        outline: $bg-baige-border solid 1px;
 
         &::placeholder {
             color: $text-dark-gray;
@@ -1514,7 +1525,7 @@ body {
         font-size: inherit;
         text-align: left;
         font-weight: 400;
-        border: solid 1px rgb(243, 209, 191) ;
+        border: solid 1px $bg-baige-border ;
         background-color: transparent;
         border-radius: 6px;
         cursor: pointer;
@@ -1535,16 +1546,16 @@ body {
         }
 
         &:focus, &--active {
-            border: solid 3px rgb(243, 209, 191) ;
+            border: solid 3px $bg-baige-border ;
         }
     }
 
     &__list {
         display: none;
         position: absolute;
-        top: 50px;
+        top: 45px;
         left: 0;
-        border: rgb(243, 209, 191) solid 1px;
+        border: solid 1px $bg-baige-border ;
         overflow: hidden;
         border-radius: 0 0 6px 6px;
         width: 100%;

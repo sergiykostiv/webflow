@@ -40,7 +40,7 @@
                 <div class="banner__wrapper">
                     <div class="banner__main">
                         <h4 class="banner__up-title up-title">Modern Studio</h4>
-                        <h1 class="banner__title">We’re Help To Build Your Dream Project</h1>
+                        <h1 class="banner__title ">We’re Help To Build Your Dream Project</h1>
                         <h5 class="banner__sub-title">Agency provides a full service range including technical skills, design, business understanding.</h5>
                         <div class="banner__buttons-wrapper">
                             <div class="banner__button">
@@ -339,19 +339,22 @@
                     <h2 class="events__title page-title-white">Explore Future Conferences</h2>
                     <div class="events__main">
                         <div class="events__item">
-                            <div class="events__item-date">
-                                <h2 class="events__item-date--number">3</h2>
-                                <div class="events__item-date--mounth">November 2021</div>
+                            <div class="events__item-wrapper">
+                                <div class="events__item-date">
+                                    <h2 class="events__item-date--number">3</h2>
+                                    <div class="events__item-date--mounth">November 2021</div>
+                                </div>
+                                <span class="events__item-time">9:00 am – 3:00 pm</span>
+                                <h5 class="events__item-title">Design Weeks</h5>
+                                <p class="events__item-text">
+                                    Digital agency is a business you hire to outsource your digital.
+                                </p>
                             </div>
-                            <span class="events__item-time">9:00 am – 3:00 pm</span>
-                            <h5 class="events__item-title">Design Weeks</h5>
-                            <p class="events__item-text">
-                                Digital agency is a business you hire to outsource your digital.
-                            </p>
                             <a class="events__item-link link-more" href="#">Explore Now</a>
                         </div>
                         <div class="events__item">
-                            <div class="events__item-date">
+                            <div class="events__item-wrapper">
+                                <div class="events__item-date">
                                 <h2 class="events__item-date--number">15</h2>
                                 <div class="events__item-date--mounth">November 2021</div>
                             </div>
@@ -360,18 +363,21 @@
                             <p class="events__item-text">
                                 Marketing efforts, instead of handling in-house.
                             </p>
+                            </div>
                             <a class="events__item-link link-more" href="#">Explore Now</a>
                         </div>
                         <div class="events__item">
-                            <div class="events__item-date">
-                                <h2 class="events__item-date--number">2</h2>
-                                <div class="events__item-date--mounth">December 2021</div>
+                            <div class="events__item-wrapper">
+                                <div class="events__item-date">
+                                    <h2 class="events__item-date--number">2</h2>
+                                    <div class="events__item-date--mounth">December 2021</div>
+                                </div>
+                                <span class="events__item-time">9:00 am – 3:00 pm</span>
+                                <h5 class="events__item-title">The F design events</h5>
+                                <p class="events__item-text">
+                                    Provide your business with a variety of digital solutions to promote.
+                                </p>
                             </div>
-                            <span class="events__item-time">9:00 am – 3:00 pm</span>
-                            <h5 class="events__item-title">The F design events</h5>
-                            <p class="events__item-text">
-                                Provide your business with a variety of digital solutions to promote.
-                            </p>
                             <a class="events__item-link link-more" href="#">Explore Now</a>
                         </div>
                     </div>
@@ -794,7 +800,7 @@
                 <div class="newsletter__wrapper">
                     <h2 class="newsletter__title page-title">Newsletter</h2>
                     <form class="newsletter__input-wrapper" action="#">
-                        <input class="newsletter__input" placeholder="Your email" type="text">
+                        <input class="newsletter__input" placeholder="Your email" type="email">
                         <button class="newsletter__input-button button-baige">Subscribe</button>
                     </form>
                 </div>
@@ -802,15 +808,11 @@
         </section>
         <section class="map">
             <div class="map__wrapper">
-                <div class="container">
-                    
-                </div>
                 <div class="map__wrapper-item">
                     <div class="map__modal">
                         <h5 class="map__modal-title block-title">Get In Touch</h5>
                         <form class="map__modal-form" action="#">
                             <input class="map__modal-input map__modal-email" placeholder="Your email" type="email">
-
                             <div class="map__modal-dropdown dropdown">
                                 <button class="map__modal-button dropdown__button" type="button">Value 1</button>
                                 <ul class="map__modal-list dropdown__list">
@@ -821,14 +823,15 @@
                                 </ul>
                                 <input class="dropdown__input-hidden" type="text" name="select-category" value="">
                             </div>
-
                             <textarea class="map__modal-input map__modal-message" placeholder="Message"></textarea>
                             <button class="map__modal-button button-orange">Submit Now</button>
                         </form>
                     </div>
                     <a class="map__wrapper-item-link" href="#">
-                        <a class="map__wrapper-point" href="#"></a>
-                        <img class="map__wrapper-item-img" src="static/img/map.png" alt="#">
+                        <div class="map__wrapper-item-wrapper">
+                            <img class="map__wrapper-item-img" src="static/img/map.png" alt="#">
+                            <a class="map__wrapper-point" href="#"></a>
+                        </div>
                     </a>
                 </div>                
             </div>

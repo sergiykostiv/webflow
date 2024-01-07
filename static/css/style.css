@@ -223,6 +223,13 @@ body {
   letter-spacing: -2px;
   max-width: 90%;
   margin-bottom: 24px;
+  transition: all 0.8s;
+  transform: translate(0, 50%);
+  opacity: 0;
+}
+.banner__title.active {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 .banner__sub-title {
   color: rgba(255, 255, 255, 0.64);
@@ -688,11 +695,14 @@ body {
   justify-content: space-between;
 }
 .events__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: start;
   padding: 36px 40px;
   border-radius: 6px;
   border: 1px solid #3A3C56;
-  max-width: 370px;
+  width: 370px;
 }
 .events__item-date {
   display: flex;
@@ -741,6 +751,7 @@ body {
 }
 .events__item-link {
   color: #FFF;
+  justify-self: flex-end;
 }
 
 .ourteam {
@@ -805,7 +816,7 @@ body {
   width: 12px;
   height: 12px;
   background: transparent;
-  border: solid 1px #4E4F6E;
+  border: solid 1px #3A3C56;
   transition: background-color 0.3s;
   opacity: 1;
 }
@@ -889,7 +900,7 @@ body {
   border: 1px solid #F3D1BF;
 }
 .testimonials__main-review--accent {
-  background-color: #fff;
+  background-color: #FFF;
 }
 .testimonials__main-rating {
   display: flex;
@@ -1205,7 +1216,7 @@ body {
   transform: translate(0, -50%);
   z-index: 3;
 }
-.map__wrapper-item {
+.map__wrapper-item-wrapper {
   position: relative;
 }
 .map__wrapper-point {
@@ -1240,7 +1251,7 @@ body {
   border: none;
   font-size: 16px;
   padding: 9px 16px;
-  outline: rgb(243, 209, 191) solid 1px;
+  outline: #F3D1BF solid 1px;
 }
 .map__modal-input::placeholder {
   color: rgba(57, 20, 0, 0.64);
@@ -1373,7 +1384,7 @@ body {
   font-size: inherit;
   text-align: left;
   font-weight: 400;
-  border: solid 1px rgb(243, 209, 191);
+  border: solid 1px #F3D1BF;
   background-color: transparent;
   border-radius: 6px;
   cursor: pointer;
@@ -1393,14 +1404,14 @@ body {
   pointer-events: none;
 }
 .dropdown__button:focus, .dropdown__button--active {
-  border: solid 3px rgb(243, 209, 191);
+  border: solid 3px #F3D1BF;
 }
 .dropdown__list {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 45px;
   left: 0;
-  border: rgb(243, 209, 191) solid 1px;
+  border: solid 1px #F3D1BF;
   overflow: hidden;
   border-radius: 0 0 6px 6px;
   width: 100%;
