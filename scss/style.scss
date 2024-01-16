@@ -3,7 +3,7 @@
 @import "normalize";
 @import "design-style";
 
-body {
+body{
   margin: 0;
   font-family: "Epilogue", sans-serif;
   font-size: 16px;
@@ -158,7 +158,7 @@ body {
     flex-direction: column;
   }
 
-  &__review-text--data {
+  &__review-text--data{
     color: $light-gray;
   }
 }
@@ -239,14 +239,13 @@ body {
     margin-bottom: 28px;
   }
 
-  &__list {
+  &__list{
     counter-reset: ol-numbers;
     display: flex;
     flex-direction: column;
     row-gap: 80px;
     color: $text-dark;
-    margin-top: 103px;
-  }
+    margin-top: 103px;}
 
   &__list-item {
     position: relative;
@@ -817,9 +816,6 @@ body {
   &__prev {
     background-image: url(../img/arrow-left.svg);
   }
-}
-
-.swiper .swiper-slide {
 }
 
 .swiper-wrapper {
@@ -1475,6 +1471,11 @@ body {
     width: 48px;
     height: 48px;
     fill: $acent-orange;
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: $acent-purple;
+    }
   }
 
   &__copyright {
